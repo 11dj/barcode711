@@ -1,0 +1,27 @@
+video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+} 
+
+#interactive.viewport {
+  width: 360px;
+  height: 200px;
+  overflow: hidden;
+}
+
+#interactive.viewport canvas, video {
+  float: left;
+  width: 320px;
+  height: 300px;
+}
+
+.drawingBuffer{
+  height: 50px;
+  width: 50px;
+  background: green;
+}
+
+#interactive.viewport canvas.drawingBuffer, video.drawingBuffer {
+  margin-left: -640px;
+} 

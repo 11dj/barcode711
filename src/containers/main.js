@@ -8,6 +8,10 @@ import {
   disableLoading
 } from '../actions/loading'
 
+import {
+  scanner
+} from '../actions/reader'
+
 import './style.css'
 
 
@@ -33,7 +37,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
     // loading action
-    enableLoading, disableLoading,
+    enableLoading, disableLoading, scanner
   }, dispatch)
 }
 
